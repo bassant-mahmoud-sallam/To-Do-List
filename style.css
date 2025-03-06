@@ -1,0 +1,96 @@
+body {
+    background-color: #607D8B;
+    font-family: system-ui;
+}
+.container {
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #1580b58f;
+    padding: 70px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #ddd inset;
+}
+.container h1 {
+    margin: 20px auto;
+    width: fit-content;
+    color: whitesmoke;  
+}
+.container h1 span {
+    color: #15f8f8;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 3px #ddd;
+}
+.form {
+    background-color: #ddd;
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+input.txt {
+    border: none;
+    flex: 1;
+    padding: 10px;
+    margin: 0 15px 0 0;
+    border-radius: 5px;
+}
+input.txt:focus {
+    outline: none;
+}
+.add {
+    border: navajowhite;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #1d42548f;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.add:hover {
+    background-color: #1580b58f;
+}
+.add.all:hover,
+.tasks div button.del:hover{
+    background-color: rgb(173, 22, 22);
+}
+.tasks {
+    margin: 10px 0;
+    background-color: #ddd;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.tasks div {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #7777776e;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.tasks div:not(:last-child) {
+    margin-bottom: 5px;
+}
+.tasks .done {
+    opacity: 0.3;
+}
+.tasks div span {
+    font-size: 20px;
+    user-select: none;
+}
+.tasks div button.del{
+    border: none;
+    padding: 0px 20px;
+    background-color: #1d42548f;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+button.all {
+    display: block;
+    margin: auto;
+}
